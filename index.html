@@ -9,9 +9,68 @@
   </head>
   <body>
     <section class="main-section">
-      <img src="mountain1.png" alt="mountain1" id="layer-1" />
-      <img src="mountain2.png" alt="mountain2" id="layer-2" />
+      <img src="mountain1.png" alt="mountain1" id="layer1" />
+      <img src="mountain2.png" alt="mountain2" id="layer2" />
       <img src="text.png" alt="text" id="text" />
     </section>
+    <section class="content">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sunt
+        vel iusto facere, error reprehenderit non, sit animi dicta repellendus
+        placeat libero obcaecati unde voluptas nostrum est. Tempora, blanditiis
+        assumenda? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Quis, sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+        corrupti sed dolorum nam voluptatum neque nemo repellat corporis alias
+        facere aut quod atque voluptatem veniam labore minima placeat vel
+        cupiditate, omnis laudantium beatae odit velit! Numquam ipsam assumenda
+        sapiente suscipit quae quibusdam et consequatur cupiditate. ro obcaecati
+        unde voluptas nostrum est. Tolor, sit amet consectetur adipisicing elit.
+        Quis, sit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+        corrupti sed dolorum nam voluptatum neque nemo repellat corporis alias
+        facere aut quod atque voluptatem veniam labore minima placeat vel
+        cupiditate, omnis laudantium beatae odit vempora, blanditiis assumenda?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, sit.
+        Lorem ipsum dolor sinis laudantium beatae odit velit! Numquam ipsam
+        assumenda sapiente suscipit quae quibusdam et consequatur cupiditate. ro
+        obcaecati unde voluptas nostrum est. Tempora, blanditiis assumenda?
+        Lorem ipsum dolor, sitt, amet consectetur adipisicing elit. Sit corrupti
+        sed dolorum nam voluptatum neque nemo repellat corporis alias facere aut
+        quod atque vol
+      </p>
+    </section>
+
+    <script type="text/javascript">
+      var layer1 =document.getElementById('layer1')
+      scroll=window.pageYOffset;
+      document.addEventListener('scroll',function(e)
+      {
+          var offset=window.pageYOffset;
+          scroll=offset;
+          layer1.style.width=(100+scroll) + '%';
+      }
+      );
+      var layer2 =document.getElementById('layer2')
+      scroll=window.pageYOffset;
+      document.addEventListener('scroll',function(e)
+      {
+          var offset=window.pageYOffset;
+          scroll=offset;
+          layer2.style.width=(100+scroll) + '%';
+          layer2.style.left=scroll/50 + '%';
+      }
+      );
+
+      var text =document.getElementById('text')
+      scroll=window.pageYOffset;
+      document.addEventListener('scroll',function(e)
+      {
+          var offset=window.pageYOffset;
+          scroll=offset;
+          text.style.width=(100+scroll) + '%';
+          text.style.top=  -  scroll/20 + '%';
+      }
+      );
+    </script>
   </body>
 </html>
