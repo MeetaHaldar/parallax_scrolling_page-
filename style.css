@@ -15,7 +15,7 @@ body{
     width: 100%;
     position: absolute;
     z-index: 200;
-    height: 150px;
+    height: 250px;
     background: linear-gradient(transparent, #fff);
     bottom: 0;
 }
@@ -46,7 +46,9 @@ body{
 
 }
 
-.content{
+.main-section #text{
+
+
     
     padding: 45px;
     text-align: center;
@@ -56,6 +58,7 @@ body{
 }
 .content h2{
     padding: 10px;
+    margin-top: 50px;
     margin: 10px;
     font-size: 3.5rem;
 }
